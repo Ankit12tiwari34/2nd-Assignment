@@ -1,0 +1,125 @@
+* { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 { margin: 0; color: #facc15; }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 8px;
+        }
+
+        nav a:hover { color: #facc15; }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(120deg, #2563eb, #06b6d4);
+            color: white;
+        }
+
+        .hero h1 { font-size: 38px; }
+
+        .btn {
+            display: inline-block;
+            background: #facc15;
+            color: #172554;
+            padding: 12px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section { padding: 45px 7%; }
+
+        section h2 {
+            text-align: center;
+            color: #1d4ed8;
+            margin-bottom: 25px;
+        }
+
+        #about { text-align: center; background: #f8fafc; }
+
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .course {
+            padding: 22px;
+            text-align: center;
+            background: white;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .course:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px #0002;
+        }
+
+        #contact { background: #eff6ff; }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #94a3b8;
+            border-radius: 5px;
+            font: inherit;
+        }
+
+        button {
+            background: #1d4ed8;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover { background: #172554; }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav { text-align: center; }
+
+            .hero h1 { font-size: 28px; }
+
+            .courses { grid-template-columns: 1fr; }
+        }
+    
